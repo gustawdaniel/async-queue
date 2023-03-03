@@ -1,9 +1,9 @@
-import { Index, Queue, sleep } from '../src'
+import { AsyncQueue, Queue, sleep } from '../src'
 
 describe('queue', () => {
     it('correctly process items', async () => {
         let sum = 0
-        const queue: Queue<number> = new Index<number>(async (item) => {
+        const queue: Queue<number> = new AsyncQueue<number>(async (item) => {
             sum += item
         })
         for (const i of new Array(6).fill(1)) {
@@ -16,7 +16,7 @@ describe('queue', () => {
 
     it('can be stopped', async () => {
         let sum = 0
-        const queue: Queue<number> = new Index<number>(async (item) => {
+        const queue: Queue<number> = new AsyncQueue<number>(async (item) => {
             sum += item
         })
         queue.start()

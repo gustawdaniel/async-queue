@@ -39,7 +39,7 @@ export interface Queue<T> {
     [Symbol.asyncIterator](): AsyncIterator<T>
 }
 
-export class Index<T> implements Queue<T> {
+export class AsyncQueue<T> implements Queue<T> {
     state: 'open' | 'closed' = 'closed'
     private queue: T[] = []
     private waiting: ((item: T) => void)[] = []
