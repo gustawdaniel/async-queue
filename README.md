@@ -1,3 +1,5 @@
+[![Node.js Package](https://github.com/gustawdaniel/async-queue/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/gustawdaniel/async-queue/actions/workflows/npm-publish.yml)
+
 # Async Queue
 
 Super simple below 100 lines queue implementation build with `Promise.race` and `AsyncIterator`.
