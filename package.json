@@ -1,0 +1,30 @@
+{
+  "name": "async-queue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "build": "tsc -p .",
+    "publish": "npm publish --access public",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustawdaniel/async-queue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustawdaniel/async-queue/issues"
+  },
+  "homepage": "https://github.com/gustawdaniel/async-queue#readme",
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "esbuild-jest": "^0.5.0",
+    "jest": "^29.4.3",
+    "jest-extended": "^3.2.4",
+    "jest-text-transformer": "^1.0.4"
+  }
+}
